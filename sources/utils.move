@@ -1,4 +1,4 @@
-module 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::utils {
+module dex_contract::utils {
 
     use 0x1::fungible_asset;
     use 0x1::object;

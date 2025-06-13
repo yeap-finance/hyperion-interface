@@ -1,11 +1,11 @@
-module 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::rate_limiter_check {
+module dex_contract::rate_limiter_check {
 
     use 0x1::fungible_asset;
     use 0x1::object;
     use 0x1::smart_table;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::rate_limiter;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::rate_limiter_check;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::router_v3;
+    use dex_contract::rate_limiter;
+    use dex_contract::rate_limiter_check;
+    use dex_contract::router_v3;
 
     friend router_v3;
 

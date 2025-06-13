@@ -1,11 +1,11 @@
-module 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::fridge {
+module dex_contract::fridge {
 
     use 0x1::fungible_asset;
     use 0x1::object;
     use 0x1::option;
     use 0x1::smart_vector;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::fridge;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::router_v3;
+    use dex_contract::fridge;
+    use dex_contract::router_v3;
 
     friend router_v3;
 

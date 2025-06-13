@@ -8,7 +8,7 @@ authors = []
 dex_contract = "_"
 
 [dev-addresses]
-dex_contract = "0xAA"
+dex_contract = "0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66"
 
 [dependencies.AptosFramework]
 git = "https://github.com/aptos-labs/aptos-core.git"

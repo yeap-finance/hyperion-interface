@@ -1,9 +1,9 @@
-module 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::lp {
+module dex_contract::lp {
 
     use 0x1::fungible_asset;
     use 0x1::object;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::lp;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::pool_v3;
+    use dex_contract::lp;
+    use dex_contract::pool_v3;
 
     friend pool_v3;
 

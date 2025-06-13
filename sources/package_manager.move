@@ -1,16 +1,16 @@
-module 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::package_manager {
+module dex_contract::package_manager {
 
     use 0x1::account;
     use 0x1::acl;
     use 0x1::smart_table;
     use 0x1::smart_vector;
     use 0x1::string;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::fridge;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::lp;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::pool_v3;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::position_blacklist_v2;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::rate_limiter_check;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::router_adapter;
+    use dex_contract::fridge;
+    use dex_contract::lp;
+    use dex_contract::pool_v3;
+    use dex_contract::position_blacklist_v2;
+    use dex_contract::rate_limiter_check;
+    use dex_contract::router_adapter;
 
     friend position_blacklist_v2;
     friend lp;

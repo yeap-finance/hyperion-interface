@@ -1,11 +1,11 @@
-module 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::position_v3 {
+module dex_contract::position_v3 {
 
     use 0x1::fungible_asset;
     use 0x1::object;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::i32;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::pool_v3;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::position_v3;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::rewarder;
+    use dex_contract::i32;
+    use dex_contract::pool_v3;
+    use dex_contract::position_v3;
+    use dex_contract::rewarder;
 
     friend pool_v3;
 

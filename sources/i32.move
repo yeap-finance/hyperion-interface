@@ -1,6 +1,6 @@
-module 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::i32 {
+module dex_contract::i32 {
 
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::i32;
+    use dex_contract::i32;
 
     struct I32 has copy, drop, store {
         bits: u32,

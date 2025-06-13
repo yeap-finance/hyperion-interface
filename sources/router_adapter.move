@@ -1,9 +1,9 @@
-module 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::router_adapter {
+module dex_contract::router_adapter {
 
     use 0x1::fungible_asset;
     use 0x1::object;
     use 0x1::table;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::lp;
+    use dex_contract::lp;
 
     struct Version has key {
         migrated: table::Table<address, bool>,

@@ -1,6 +1,6 @@
-module 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::i64 {
+module dex_contract::i64 {
 
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::i64;
+    use dex_contract::i64;
 
     struct I64 has copy, drop, store {
         bits: u64,

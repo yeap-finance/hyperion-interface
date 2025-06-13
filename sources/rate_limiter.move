@@ -1,7 +1,7 @@
-module 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::rate_limiter {
+module dex_contract::rate_limiter {
 
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::rate_limiter;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::rate_limiter_check;
+    use dex_contract::rate_limiter;
+    use dex_contract::rate_limiter_check;
 
     friend rate_limiter_check;
 

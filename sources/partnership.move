@@ -1,9 +1,9 @@
-module 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::partnership {
+module dex_contract::partnership {
 
     use 0x1::fungible_asset;
     use 0x1::object;
     use 0x1::string;
-    use 0x41639FF06DB072C728F61E31405DDFDA0D78E14EAF45C2E3588A5F5CC1CE2A66::pool_v3;
+    use dex_contract::pool_v3;
 
     struct PartnerSwapEvent has copy, drop, store {
         pool_id: address,
