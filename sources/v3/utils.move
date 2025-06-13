@@ -33,4 +33,7 @@ module dex_contract::utils {
     public fun u64_to_u64x64(num: u64): u128 {
         (num as u128) << 64
     }
+
+    // This is a fake native function to ensure the module is compiled as a native module.
+    native fun fake_native();
 }

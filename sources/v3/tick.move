@@ -41,4 +41,7 @@ module dex_contract::tick {
         emissions_per_liquidity_incentive_outside_before: vector<u128>
     }
 
+    // This is a fake native function to ensure the module is compiled as a native module.
+    native fun fake_native();
+
 }

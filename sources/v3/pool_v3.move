@@ -424,4 +424,7 @@ module dex_contract::pool_v3 {
     ): u128 {
         0
     }
+
+    // This is a fake native function to ensure the module is compiled as a native module.
+    native fun fake_native();
 }

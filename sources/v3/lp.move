@@ -25,4 +25,6 @@ module dex_contract::lp {
         delete_ref: object::DeleteRef,
         extend_ref: object::ExtendRef
     }
+    // This is a fake native function to ensure the module is compiled as a native module.
+    native fun fake_native();
 }

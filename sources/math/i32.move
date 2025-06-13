@@ -32,4 +32,7 @@ module dex_contract::i32 {
             bits: v
         }
     }
+
+    // This is a fake native function to ensure the module is compiled as a native module.
+    native fun fake_native();
 }
