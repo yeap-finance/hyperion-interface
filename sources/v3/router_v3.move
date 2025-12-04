@@ -464,4 +464,28 @@ module dex_contract::router_v3 {
     ): u64 {
         0
     }
+
+    public fun remove_liquidity_single(
+        lp: &signer,
+        lp_object: Object<position_v3::Info>,
+        liquidity_delta: u128,
+        to_meta: Object<Metadata>,
+        slippage_numerators: u256,
+        slippage_denominator: u256
+    ) {
+        abort 0;
+    }
+    public fun add_liquidity_single(
+        lp: &signer,
+        lp_object: Object<position_v3::Info>,
+        from_a: Object<Metadata>,
+        to_b: Object<Metadata>,
+        amount_in: u64,
+        slippage_numerators: u256,
+        slippage_denominator: u256,
+        threshold_numerator: u256,
+        threshold_denominator: u256
+    ) {
+        abort 0;
+    }
 }
