@@ -7,13 +7,7 @@ module dex_contract::utils {
     const EIDENTICAL_TOKENS: u64 = 130001;
 
     #[view]
-    public fun is_sorted(token_1: Object<Metadata>, token_2: Object<Metadata>): bool {
-        let token_1_addr = object::object_address(&token_1);
-        let token_2_addr = object::object_address(&token_2);
-        let result = comparator::compare(&token_1_addr, &token_2_addr);
-        assert!(!result.is_equal(), EIDENTICAL_TOKENS);
-        comparator::compare(&token_1_addr, &token_2_addr).is_smaller_than()
-    }
+    public native fun is_sorted(token_1: Object<Metadata>, token_2: Object<Metadata>): bool;
 
     #[view]
     public fun lp_token_name(token_1: Object<Metadata>, token_2: Object<Metadata>): String {

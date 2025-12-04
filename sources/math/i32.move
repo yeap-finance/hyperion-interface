@@ -17,11 +17,7 @@ module dex_contract::i32 {
         value: u32
     }
 
-    public fun zero(): I32 {
-        I32 {
-            bits: 0
-        }
-    }
+    public native fun zero(): I32;
 
     public fun as_u32(_v: I32): u32 {
        0

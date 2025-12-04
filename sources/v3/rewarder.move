@@ -86,8 +86,6 @@ module dex_contract::rewarder {
         rate: u128
     }
 
-    public fun pending_rewards_unpack(info: &PendingReward): (Object<Metadata>, u64) {
-        (info.reward_fa, info.amount_owed)
-    }
+    public native fun pending_rewards_unpack(info: &PendingReward): (Object<Metadata>, u64);
 
 }

@@ -6,11 +6,10 @@ authors = []
 
 [addresses]
 dex_contract = "_"
-deployer = "_"
 
 [dev-addresses]
 dex_contract = "0xAA"
-deployer = "0xBB"
+
 
 [dependencies]
 AptosFramework = { git = "https://github.com/aptos-labs/aptos-framework.git", subdir = "aptos-framework", rev = "mainnet" }

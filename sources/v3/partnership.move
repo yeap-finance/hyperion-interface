@@ -23,7 +23,7 @@ module dex_contract::partnership {
     /////////////////////////////////////////////////// USERS /////////////////////////////////////////////////////////
     /// Swap an amount of fungible assets for another fungible asset. User can specifies the minimum amount they
     /// expect to receive. If the actual amount received is less than the minimum amount, the transaction will fail.
-    public entry fun exact_input_swap_entry(
+    public native fun exact_input_swap_entry(
         _user: &signer,
         _fee_tier: u8,
         _amount_in: u64,
@@ -34,8 +34,7 @@ module dex_contract::partnership {
         _recipient: address,
         _partner: String,
         _deadline: u64
-    ) {
-    }
+    );
 
     /// Swap an amount of coins for fungible assets. User can specifies the minimum amount they expect to receive.
     public entry fun exact_input_coin_for_asset_entry<FromCoin>(

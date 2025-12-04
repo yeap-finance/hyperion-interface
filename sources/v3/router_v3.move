@@ -16,14 +16,12 @@ module dex_contract::router_v3 {
     const EIN_TOKEN_NOT_MATCHED: u64 = 200009;
 
     /////////////////////////////////////////////////// PROTOCOL ///////////////////////////////////////////////////////
-    public entry fun create_pool(
+    public native fun create_pool(
         _token_a: Object<Metadata>,
         _token_b: Object<Metadata>,
         _fee_tier: u8,
         _tick: u32,
-    ) {
-        abort(0);
-    }
+    );
 
     public entry fun create_pool_coin<CoinType>(
         _token_b: Object<Metadata>,
@@ -198,7 +196,7 @@ module dex_contract::router_v3 {
     ) {
         abort(0);
     }
-    
+
     public fun remove_liquidity_by_contract_with_second_signer(
         lp: &signer,
         second_signer: &signer,

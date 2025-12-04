@@ -1,16 +1,14 @@
 module dex_contract::swap_math {
     use dex_contract::i32::{I32};
 
-    public fun get_amount_by_liquidity(
+    public native fun get_amount_by_liquidity(
         _tick_lower: I32,
         _tick_upper: I32,
         _current_tick_index: I32,
         _current_sqrt_price: u128,
         _liquidity: u128,
         _round_up: bool
-    ): (u64, u64) {
-        (0, 0)
-    }
+    ): (u64, u64);
 
     public fun get_liquidity_by_amount(
         _lower_index: I32,

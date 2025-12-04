@@ -218,9 +218,7 @@ module dex_contract::pool_v3 {
 
 
     #[view]
-    public fun pool_reserve_amount(_pool_id: Object<LiquidityPoolV3>): (u64, u64) {
-        (0, 0)
-    }
+    public native fun pool_reserve_amount(_pool_id: Object<LiquidityPoolV3>): (u64, u64);
 
     #[view]
     public fun pool_rewarder_list(_pool_id: Object<LiquidityPoolV3>): vector<Rewarder> {

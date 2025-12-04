@@ -12,10 +12,6 @@ module dex_contract::i128 {
         bits: u128
     }
 
-    public fun zero(): I128 {
-        I128 {
-            bits: 0
-        }
-    }
+    public native fun zero(): I128;
 
 }

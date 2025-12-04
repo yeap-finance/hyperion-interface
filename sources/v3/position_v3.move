@@ -42,11 +42,9 @@ module dex_contract::position_v3 {
     const EPOSITION_NOT_INITIALIZED: u64 = 1200002;
     const EPOSITION_NOT_EMPTY: u64 = 12000003;
 
-    public fun get_tick(
+    public native fun get_tick(
         _position: Object<Info>
-    ): (I32, I32) {
-        (i32::zero(), i32::zero())
-    }
+    ): (I32, I32);
 
     public fun get_liquidity(
         _position: Object<Info>
