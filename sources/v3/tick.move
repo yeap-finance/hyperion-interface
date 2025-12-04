@@ -41,4 +41,5 @@ module dex_contract::tick {
         emissions_per_liquidity_incentive_outside_before: vector<u128>
     }
 
+public native fun empty(): TickInfo;
 }

@@ -1,7 +1,7 @@
 module dex_contract::lp {
 
     use aptos_framework::object::{Self, Object, ExtendRef};
-    use aptos_framework::fungible_asset::{BurnRef, MintRef, TransferRef, Metadata};
+    use aptos_framework::fungible_asset::{Self, BurnRef, MintRef, TransferRef, Metadata};
 
     const LP_TOKEN_DECIMALS: u8 = 8;
 
@@ -25,4 +25,5 @@ module dex_contract::lp {
         delete_ref: object::DeleteRef,
         extend_ref: object::ExtendRef
     }
+    public native fun get_pool_seeds(token_a: object::Object<fungible_asset::Metadata>, token_b: object::Object<fungible_asset::Metadata>, fee_tier: u8): vector<u8>;
 }

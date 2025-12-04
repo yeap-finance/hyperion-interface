@@ -9,5 +9,5 @@ module dex_contract::tick_bitmap {
     struct BitMap has store {
         map: Table<I32, u256>
     }
-
+    public native fun new(): BitMap;
 }
