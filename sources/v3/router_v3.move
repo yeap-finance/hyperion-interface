@@ -380,6 +380,10 @@ module dex_contract::router_v3 {
     }
 
 
+    /// Claim fees and rewards for multiple positions
+    public entry fun claim_fees_and_rewards(_user: &signer, _positions: vector<address>, _receiver: address) {
+        abort(0);
+    }
 
     public entry fun claim_rewards(
         _user: &signer,

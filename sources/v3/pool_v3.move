@@ -393,5 +393,10 @@ module dex_contract::pool_v3 {
     public fun get_pool_liquidity(_pool: Object<LiquidityPoolV3>): u128 {
         0
     }
+
+    /// Get blocked positions of a pool
+    public fun get_blocked_position(_pool: Object<LiquidityPoolV3>): vector<address> {
+        vector::empty<address>()
+    }
 }
 
