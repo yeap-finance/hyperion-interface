@@ -4,4 +4,7 @@ module dex_contract::tick_math {
     const MIN_SQRT_PRICE_X64: u128 = 4295048016;
     use dex_contract::i32;
     public native fun get_sqrt_price_at_tick(tick: i32::I32): u128;
+    public native fun min_sqrt_price(): u128;
+    public native fun max_sqrt_price(): u128;
+    public native fun tick_bound(): u32;
 }
